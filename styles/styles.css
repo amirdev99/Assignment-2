@@ -49,6 +49,12 @@ main {
     font-weight: 400;
     font-size: 20px;
     margin-bottom: 35px;
+    transition: all 0.3s ease 0s;
+}
+.live:hover{
+    background-color: #e24545;
+    width:200px;
+    border-radius: 10px;
 }
 .top-banner img {
     height: 424px;
@@ -75,10 +81,13 @@ main {
     margin: 10px;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: #161616;
     border-radius: 10px;
     width: 160px;
+    padding: 18px 20px;
+    text-decoration: none;
+    text-align: center;
 }
 .btn-red {
     background-color: #DD0000;
@@ -86,18 +95,21 @@ main {
     margin: 10px;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: #FFFFFF;
     border-radius: 10px;
     width: 160px;
+    padding: 18px 20px;
+    text-decoration: none;
+    text-align: center;
 }
 .mid-right{
     width: calc(100% - 220px);
 }
 .blogs {
-        display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            column-gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     column-gap: 6px;
 }
 .blog{
     
@@ -120,7 +132,215 @@ main {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
 }
+.view_all {
+    display: none;
+}
 /* footer start  */
 footer{
     background-color: #161616;
+    display: grid;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+}
+
+.footer-logo {
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.logo{
+  
+    font-size: 28px;
+    font-weight: 700;
+ }
+
+ .footer-nav a {
+     text-decoration: none;
+     padding-right: 30px;
+     color: #fff;
+ }
+ .footer-nav {
+     border-top: 1px solid #fff;
+     padding-top: 24px;
+ }
+
+ /* Second website CSS */
+
+
+.contries {
+    display: flex;
+    column-gap: 23px;
+    margin-bottom: 22px;
+}
+.country {
+    width: 263px;
+    border: 1px solid #F6F6F6;
+    padding: 26px 14px;
+    border-radius: 10px;
+}
+ .country-banner {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     justify-content: center;
+ }
+ h3.vs {
+     display: flex;
+     justify-content: center;
+ }
+ .c_v_c{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+ }
+ .match_time{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #4D4D4D;
+ }
+
+ /* Media Quaries  */
+
+/* Tablet device  */
+@media only screen and (min-width:688px) and (max-width:992px) {
+.container {
+    width: 100%;
+    }
+
+.mid-section {
+    margin-top: 0px;
+    column-gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+
+.mid-left {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    grid-template-columns:repeat(3, 1fr) ;
+    justify-content: center;
+    height: auto;
+}
+
+.btn-white {
+    background-color: #FFFFFF;
+    border: none;
+    margin: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #161616;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px 15px;
+    border: 1px solid;
+}
+
+.btn-red {
+    width: 200px;
+    padding: 10px 15px;
+}
+
+.mid-right {
+     width: 100%;
+    }
+    
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6px;
+}
+.blog {
+        padding-left: 35px;
+}
+.blog-last{
+    display: none;
+}
+.view_all{
+    display: block;
+    margin: 0 auto;
+}
+.footer-nav{
+    padding-left: 25px;
+    padding-right: 20px;
+}
+}
+/* Mobile devices */
+@media only screen and (max-width:688px) {
+.container {
+    width: 100%;
+}
+
+.top-section {
+    display: flex;
+    padding: 25px 54px;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 0px;
+}
+.top-left,
+.top-right {
+    width: 100%;
+}
+.sec-title{
+    font-size: 22px;
+    line-height: 33px;
+}
+.top-banner img {
+    height: 322px;
+    width: 239px;
+}
+.mid-section {
+    margin-top: 34px;
+    display: grid;
+    column-gap: 20px;
+}
+
+.mid-left {
+   background-color: #FFFFFF; 
+   padding: 0px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+.mid-right{
+    width: 100%;
+}
+
+
+.btn-white {
+    border: 1px solid #E8E8E8;
+    width: 200px;
+}
+.btn-red{
+    width: 200px;
+}
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.blog {
+    display: grid;
+    justify-content: center;
+}
+.blog-banner {
+    margin: 0 auto;
+}
+.blog-details {
+    padding: 0 38px;
+    margin-bottom: 20px;
+}
+.footer-nav {
+    display: grid;
+}
 }
